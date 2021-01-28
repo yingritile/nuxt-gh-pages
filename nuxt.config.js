@@ -8,8 +8,12 @@ const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES'
     }
     : {};
 
-export default {
+/*export default*/
+    module.exports =  {
     mode: 'spa',
+    router: {
+        base: '/nuxt-gh-pages/'
+    },
     /*
      ** Headers of the page
      */
@@ -94,3 +98,4 @@ export default {
         }
     }
 };
+
